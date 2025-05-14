@@ -14,9 +14,10 @@
         <div class="header-main"><a href="#top"><img src="assets/logoWIP-tilt-modified.png" id="logo"></a> </div>
         <ul>
             <li><a href="#aboutSection" class="dashboardButton"> About </a></li>
+            <li><a href="#workHistorySection" class="dashboardButton"> Experiences </a></li>
             <li><a href="#projectSection" class="dashboardButton"> Projects </a></li>
             <li><a href="#skillsSection" class="dashboardButton"> Skills </a></li>
-            <li><a href="#contactSection" class="dashboardButton"> Contact </a></li>
+            <!--<li><a href="#contactSection" class="dashboardButton"> Contact </a></li>-->
         </ul>
     </div>
     <div id="top"></div>
@@ -64,6 +65,56 @@
     </div>
 
     <div class="break"></div>
+
+    <!-- Work History Section -->
+    <div class="break" id="workHistorySection"></div>
+    <div class="sectionHeader" id="workHistoryTitle">Experiences</div>
+    <div id="workHistoryContainer">
+        <ul class="workHistoryList">
+            <li>
+                <span class="workCardIcon">
+                    <img src="assets/amazon.png" alt="Amazon Logo" width="28" height="28" />
+                </span>
+                <strong>Software Engineering Intern</strong> – Amazon (May 2025 – Aug 2025)<br>
+                <ul class="workDescBullets">
+                    <li>Incoming Software Engineering Intern at Amazon on a team focused on Machine Learning and AI systems with emphasis in AWS Athena.</li>
+                </ul>
+            </li>
+            <li>
+                <span class="workCardIcon">
+                    <img src="assets/penn.png" alt="University of Pennsylvania Logo" width="28" height="28" />
+                </span>
+                <strong>Head TA - Operating Systems</strong> – University of Pennsylvania (Jan 2025 – December 2025)<br>
+                <ul class="workDescBullets">
+                    <li>In charge of running class logistics for ~300 students, office hours, grading, and teaching topics ranging from threads and concurrency to processes and virtual memory in addition to regularly checking in on student’s wellbeing.</li>
+                    <li>Mentoring many students through process of creating a mock Linux operating system from scratch including a custom binary filesystem and priority scheduler. Includes features such as a built-in shell and logging system.</li>
+                    <li>Check out a lecture I gave on filesystems <a class="osLec" href="https://youtu.be/VhnKZj5Kmbc?t=736" target="_blank" rel="noopener noreferrer">here</a>!</li>
+                </ul>
+            </li>
+            <li>
+                <span class="workCardIcon">
+                    <img src="assets/ai.png" alt="ai4code Logo" width="28" height="28" />
+                </span>
+                <strong>Research Assistant</strong> – ai4code (May 2024 – July 2024)<br>
+                <ul class="workDescBullets">
+                    <li>Designed and developed various novel interfaces with Professor Mayur Naik for the purpose of detecting Common Weakness Enumerations and vulnerabilities in any codebase using Large Language Models. </li>
+                    <li>Used prompting strategies like few-shot calibration and fine tuning to contribute to automated security solutions.</li>
+                    <li>Utilized tools such as Gradle, Jacoco, parsers, and various symbolic execution tools in addition to various LLMs to automate the pipeline of optimal test generation for vulnerability detection.</li>
+                    <li>Read more about the pipeline in the <a class="osLec" href="#vulPipeline">Vulnerability Detection Pipeline</a> project below.</li>
+                </ul>
+            </li>
+            <li>
+                <span class="workCardIcon">
+                    <img src="assets/briefcase.png" alt="Startup Logo" width="40" height="40" />
+                </span>
+                <strong>Systems Intern</strong> – Build Your Insight LLC (Jun 2023 – Aug 2023)<br>
+                <ul class="workDescBullets">
+                    <li>Wrote and managed backend code related to IPC orchestrating systems to efficiently copy object-oriented databases using cloud infrastructure reducing download time by up to 200%.</li>
+                    <li>Utilized parallel processing worker systems using GRPC distributed systems, multi-threading, and bulk loading in order to optimize loading of the database partitions pertaining to specific server and bandwidth limits.</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
     <div class="break" id="projectSection"></div>
 
     <div class="sectionHeader" id="projectTitle">Projects</div>
@@ -103,11 +154,11 @@
                         </svg>
                     </a>
                     <a href="https://docs.google.com/presentation/d/1brx1gxudjGriENxPrPXXdQRE4Pl2uaYh/edit?usp=sharing&ouid=109800947523229724509&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="projectIcon">
-                            <title>more-info</title>
-                            <path d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z" />
-                        </svg>
-                    </a>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="projectIcon">
+                                <title>more-info</title>
+                                <path d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z" />
+                            </svg>
+                        </a>
                 </div>
             </div>
         </div>
@@ -225,7 +276,7 @@
                         <div class="imageCaption">Upload Page</div>
                     </div>
                 </div>
-                <div class="projectImageContainer">
+                <div class="projectImageContainer" id="vulPipeline">
                     <a href="https://github.com/ahmedOmuharram/cover-ai" target="_blank" rel="noopener noreferrer">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="projectIcon">
                             <title>Github</title>
@@ -454,7 +505,7 @@
             </div>
         </div>
 
-        <div class="projectCard">
+        <!--<div class="projectCard">
             <div class="projectIconContainer">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="projectIcon">
                     <path d="M12,3C7.58,3 4,4.79 4,7C4,9.21 7.58,11 12,11C16.42,11 20,9.21 20,7C20,4.79 16.42,3 12,3M4,9V12C4,14.21 7.58,16 12,16C16.42,16 20,14.21 20,12V9C20,11.21 16.42,13 12,13C7.58,13 4,11.21 4,9M4,14V17C4,19.21 7.58,21 12,21C16.42,21 20,19.21 20,17V14C20,16.21 16.42,18 12,18C7.58,18 4,16.21 4,14Z" />
@@ -467,7 +518,7 @@
                     Wrote and managed backend code related to IPC orchestrating systems to efficiently copy object-oriented databases using cloud infrastructure reducing download time by up to 200%. Additionally, utilized parallel processing worker systems using GRPC distributed systems, multi-threading, and bulk loading in order to optimize loading of the database partitions pertaining to specific server and bandwidth limits.
                 </div>
             </div>
-        </div>
+        </div>-->
         
         <div class="projectCard">
             <div class="projectIconContainer">
@@ -498,7 +549,7 @@
                     <path d="M19.5 17H18C19.1 17 20 16.1 20 15S19.1 13 18 13V9C18 8 18 7 16.92 6.14C16.97 5.93 17 5.72 17 5.5C17 3.57 15 2 12.5 2C10.24 2 8.38 3.31 8.07 5H6L3.71 2.79L3 3.5L5 5.5L3 7.5L3.71 8.21L6 6H8.07C8.38 7.69 10.24 9 12.5 9C13 9 13.5 8.92 13.93 8.8C13.97 8.87 14 8.94 14 9V13H8C6.9 13 6 13.9 6 15S6.9 17 8 17H6.5C5.12 17 4 18.12 4 19.5C4 19.67 4 19.84 4.05 20H4C2.9 20 2 20.9 2 22H19.5C20.88 22 22 20.88 22 19.5S20.88 17 19.5 17M12 5C11.45 5 11 4.55 11 4S11.45 3 12 3 13 3.45 13 4 12.55 5 12 5Z" />
                 </svg>
             </div>
-             <div class="projectContent">
+            <div class="projectContent">
                 <div class="projectTitle">Fruity Snake</div>
                 <div class="projectDivider"></div>
                 <div class="projectDescription">Designed and implemented a custom snake esc game using the Java Swing framework.
