@@ -34,3 +34,46 @@ function currentSlide(n) {
     clearTimeout(timeoutId);
     showSlides(slideIndex = n);
 }
+
+// Image Modal (Lightbox) functionality for project images
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Add click event to all project images
+    document.querySelectorAll('.projectImage').forEach(img => {
+        img.addEventListener('click', function() {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            const modalCaption = document.getElementById('modalImageCaption');
+            modalImg.src = this.src;
+            modalImg.alt = this.alt;
+            // Find the .imageCaption sibling and use its text as the modal caption
+            let captionText = '';
+            const parent = this.parentElement;
+            if (parent && parent.querySelector('.imageCaption')) {
+                captionText = parent.querySelector('.imageCaption').textContent;
+            } else {
+                captionText = this.alt || '';
+            }
+            modalCaption.textContent = captionText;
+            modal.classList.add('active');
+        });
+    });
+
+    // Close modal on close button
+    const closeBtn = document.getElementById('closeImageModal');
+    if (closeBtn) {
+        closeBtn.onclick = function() {
+            document.getElementById('imageModal').classList.remove('active');
+        };
+    }
+
+    // Close modal when clicking outside the image
+    const modal = document.getElementById('imageModal');
+    if (modal) {
+        modal.addEventListener('click', function(e) {
+            if (e.target === modal) {
+                modal.classList.remove('active');
+            }
+        });
+    }
+});
