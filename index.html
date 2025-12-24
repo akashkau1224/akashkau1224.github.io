@@ -59,9 +59,9 @@
         <div id="imageContainer">
             <img src="assets/profile.jpg">
         </div>
-        <div id="aboutMe">Hi! Welcome to my website! My name is Akash and I am currently a senior studying at the University of Pennsylvania pursuing a BSE in Computer Science. 
-            Technically, I have a lot of interests varying from low-level systems design to server-side/database querying to full stack development and front-end/styling.
-            In my freetime I enjoy sketching, painting and occasionally photography (as you can see above)! I am also a drummer and enjoy fairly long runs.</div>
+        <div id="aboutMe">Hi! Welcome to my website! My name is Akash and I recently graduated from the University of Pennsylvania with a BSE in Computer Science. 
+            Technically, I have a lot of interests varying from low-level kernel development to higher level system design to backend/API programming and full stack development. In my freetime I enjoy sketching, painting and occasionally photography (as you can see above)!
+        </div>
     </div>
 
     <div class="break"></div>
@@ -71,6 +71,17 @@
     <div class="sectionHeader" id="workHistoryTitle">Experiences</div>
     <div id="workHistoryContainer">
         <ul class="workHistoryList">
+            <li>
+                <span class="workCardIcon">
+                    <img src="assets/db.png" alt="Databricks Logo" width="28" height="28" />
+                </span>
+                <strong>Software Engineer</strong> Databricks (February 2026 – Present)<br>
+                <ul class="workDescBullets">
+                    <li>
+                        I am an incoming software engineer at Databricks.
+                    </li>
+                </ul>
+            </li>
             <li>
                 <span class="workCardIcon">
                     <img src="assets/amazon.png" alt="Amazon Logo" width="28" height="28" />
@@ -121,6 +132,49 @@
     <div class="sectionHeader" id="projectTitle">Projects</div>
 
     <div class="projectContainer">
+        <div class="projectCard">
+            <div class="projectIconContainer">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="projectIcon">
+                    <title>cloud</title>
+                    <path d="M6.5 20Q4.22 20 2.61 18.43 1 16.85 1 14.58 1 12.63 2.17 11.1 3.35 9.57 5.25 9.15 5.88 6.85 7.75 5.43 9.63 4 12 4 14.93 4 16.96 6.04 19 8.07 19 11 20.73 11.2 21.86 12.5 23 13.78 23 15.5 23 17.38 21.69 18.69 20.38 20 18.5 20Z" />
+                </svg>
+            </div>
+            <div class="projectContent">
+                <div class="projectTitle">PennCloud</div>
+                <div class="projectDivider"></div>
+                <div class="projectDescription">
+                    Created a custom distributed cloud service from scratch using C++. Includes a custom persistent drive service, and webmail service to send and receive emails. Frontend uses load balancing and caching to preserve state. Backend is a custom KVS based on Google's BigTable design using primary based replication and partitioning using consistent hashing. Includes robust fault tolerance and recovery mechanisms.
+                </div>
+                <div class="projectImageContainer">
+                    <div class="projectImageWithCaption">
+                        <img src="assets/project-images/drive.png" alt="PennCloud" class="projectImage">
+                        <div class="imageCaption">Drive Service</div>
+                    </div>
+                    <div class="projectImageWithCaption">
+                        <img src="assets/project-images/mail.png" alt="PennCloud" class="projectImage">
+                        <div class="imageCaption">Mail Service</div>
+                    </div>
+                    <div class="projectImageWithCaption">
+                        <img src="assets/project-images/admin.png" alt="PennCloud" class="projectImage">
+                        <div class="imageCaption">Admin Console</div>
+                    </div>
+                </div>
+                <div class="projectImageContainer">
+                    <a href="https://www.youtube.com/watch?v=Ol_V16gsq7U" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="projectIcon">
+                            <title>video-box</title>
+                            <path d="M18,16L14,12.8V16H6V8H14V11.2L18,8M20,4H4A2,2 0 0,0 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z" />
+                        </svg>
+                    </a>
+                    <a href="https://drive.google.com/file/d/1Z9XleR-ixgfrfBp0hYMErpgftf7AoeC2/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="projectIcon">
+                                <title>more-info</title>
+                                <path d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z" />
+                            </svg>
+                        </a>
+                </div>
+            </div>
+        </div>
         <div class="projectCard">
             <div class="projectIconContainer">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="projectIcon">
